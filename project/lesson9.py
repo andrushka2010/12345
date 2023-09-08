@@ -18,6 +18,5 @@ with sq.connect('saper2.db') as con:
     model TEXT,
     price INTEGER 
     )""")
-
     for car in cars:
         cur.execute("INSERT INTO cars VALUES(NULL, ?,?)", car)
